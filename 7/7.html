@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>Canvas & Mootools</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
+          integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	
+	<style type="text/css">
+		canvas { border: 1px solid blue; }
+		#Progress{
+			width: 100px;
+			background-color: #ddd;
+
+		}
+		#bar{
+			width: 0%;
+			height: 30px;
+			text-align: center;
+			color: black;
+			background-color: #4CAF50;
+		}
+		#form{
+			visibility:visible;/*hidden;*/
+		}
+	</style>
+</head>
+<body>
+	<input type = "button" value = "Показать таблицу" onclick="onclick_show_table()">
+	<input type = "button" value = "Пауза" onclick="pausa()">
+	<input type = "button" value = "Новая игра" onclick="new_game()">
+	<input type = "button" value = "Сменить игрока" onclick="swap_player()">
+	<canvas id="canvas"></canvas><br>
+<form id = "form">
+	<span id = "level">level 1</span><br>
+	<span id = "wave">Волна 1</span><br>
+	<span id = "PlayerName"></span><br>
+	<span id = "EXP">0</span><br>
+	<span id = "HP">100</span>
+	<div id = "Progress">
+		<div id = "bar"></div>
+	</div>
+	<input type = "button" value = "тип ракет 1" onclick="type_rocket(1)">
+	<input type = "button" value = "тип ракет 2" onclick="type_rocket(2)">
+	<input type = "button" value = "тип ракет 3" onclick="type_rocket(3)">
+	<span id = "mark"></span>
+</form>
+	<br>
+	<script type="text/javascript" src="interface.js"></script>
+	<script type="text/javascript" src="plane.js"></script>
+	<script type="text/javascript" src="colis.js"></script>
+	<script type="text/javascript" src="enemies.js"></script>
+	<script type="text/javascript" src="fire.js"></script>
+	<script type="text/javascript" src="lavel.js"></script>
+	<script type="text/javascript" src="mouse.js"></script>
+	<script type="text/javascript" src="backFon.js"></script>
+	<script type="text/javascript">
+		function for_proba() {
+			
+			
+		}
+		
+	</script>
+</body>
+</html>
